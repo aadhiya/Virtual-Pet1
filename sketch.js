@@ -14,20 +14,21 @@ function setup() {
   console.log(database);
   createCanvas(800, 700);
   dog = createSprite(400,300);
+   dog.addImage(dog);
 }
 
 
 function draw() {  
   background("green")
-if(keywentDown(UP_ARROW)){
+if(keyWentDown(UP_ARROW)){
  writeStock(foodS);
 dog.addImage(happyDog);
 }
-if(keywentDown(UP_ARROW)){
-  var foodStock-1;
- }
+//if(keywentDown(UP_ARROW)){
+ // var foodStock-1;
+// }
   drawSprites();
-  text("foodStock"+score,width-300,50);
+  text("foodStock"+foodS,width-300,50);
   noStroke();
   textSize(35);
   fill("white")
