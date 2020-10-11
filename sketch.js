@@ -4,7 +4,7 @@ var foodS, foodStock;
 var foodStock= 24;
 function preload()
 {
-dog = loadImage("Dog.png");
+dogimg = loadImage("Dog.png");
 happyDog = loadImage("happyDog.png");
 }
 
@@ -14,6 +14,8 @@ function setup() {
   console.log(database);
   createCanvas(800, 700);
   dog = createSprite(400,300);
+  dog.addImage(dogimg);
+  dog.scale=0.15;
 }
 
 
